@@ -3,7 +3,7 @@ today=$(date +"%Y-%m-%d")
 backup_dir="/tmp/backup-$today"
 source_file="/var/log/syslog"
 #Check if the buckup directory exists
-if [[ ! -d "$bauckup_dir" ]]; then
+if [[ ! -d "$backup_dir" ]]; then
 	echo "Directory $backup_dir not found"
 	mkdir "$backup_dir"
 	echo "Directory Created."
